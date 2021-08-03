@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Start</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="ba-container">
+		<h1 class="ba-title">There are current <b data-number>0</b> humans in space</p>
+		<ul class="ba-spaceman-list">
+		  <script type="text/template" id="li-tmpl">
+			  <li class="ba-spaceman" >
+						  <div class="ba-spaceman__top">
+								  <div class="ba-spaceman__index">{{index}}.</div>
+								  <div class="ba-spaceman__craft">{{craft}}</div>
+							  </div>
+						  <h3 class="ba-spaceman-name">{{name}}</h3>
+							  <img class="ba-spaceman__img" src="img/icon.svg" width="64" height="64" alt="{{name}}" />
+			  </li>
+		  </script>
+		  
+		</ul>
+	</div>
+    <script src="app.js"></script>
+  </body>
+</html>
